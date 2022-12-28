@@ -1,0 +1,119 @@
+*,*:before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+* { border: 1px solid red; }
+
+/* General */
+body {
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+/* Navbar */
+.navbar-brand {
+    
+    text-shadow: 2px 2px rgb(228, 222, 35);
+}
+
+
+.nav-link:hover {
+    background-color: cyan;
+}
+
+.maintxt {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* .container1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 200px;
+    top: 0px;
+    background-image: url(../../static/images/lonely-road_1127-3.webp);
+} */
+
+
+/* Footer */
+footer {
+    margin-bottom: 0px;
+}
+
+.bottom {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.map {
+    width: 275px;
+    padding: 2%;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.maping {
+    width: 200px;
+}
+
+.media {
+    height: 25px;
+}
+
+.tiny:hover {
+    background-color: darkorange;
+}
+
+.footinfo {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.footshows {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font: 0.6em;
+}
+
+.foothead {
+    font-size: 2em;
+}
+
+.tiny {
+    margin: 0;
+}
