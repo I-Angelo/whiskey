@@ -1,10 +1,14 @@
 from forms import UserLoginForm
-from models import User, db, check_password_hash
+from models import User, Register, db, check_password_hash
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 
 from flask_login import login_user, logout_user, LoginManager, current_user, login_required 
 
 auth = Blueprint('auth', __name__, template_folder = 'auth_templates')
+
+# auth2 = Blueprint('auth2', __name__, template_folder = 'auth_templates')
+
+# api = Blueprint('api', __name__, url_prefix = '/api')
 
 @auth.route('/signup', methods = ['GET', 'POST']) 
 def signup():
@@ -55,3 +59,5 @@ def signin():
 def logout():
     logout_user() 
     return redirect(url_for('site.home'))
+
+

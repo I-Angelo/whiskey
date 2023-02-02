@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, render_template
 from helpers import token_required
-from models import db, User, Poison, poison_schema, poisons_schema
+from models import db, User, Register, Poison, poison_schema, poisons_schema
 
 api = Blueprint('api', __name__, url_prefix = '/api')
 
@@ -71,3 +71,7 @@ def delete_poison(current_user_token, id):
     db.session.commit()
     response = poison_schema.dump(poison)
     return jsonify(response)
+
+
+
+
